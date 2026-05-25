@@ -6,15 +6,17 @@
 }
 
 body {
-  background: #111;
-  color: white;
+  background: #f8f9fa; /* Fondo gris muy clarito para que no lastime la vista */
+  color: #333; /* Texto oscuro */
 }
 
 header {
-  background: #000;
+  background: #ffffff;
   padding: 15px 40px;
   position: sticky;
   top: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra para separar el menú del fondo */
+  z-index: 100;
 }
 
 nav {
@@ -27,6 +29,7 @@ nav {
 nav h1 {
   transition: 0.3s;
   cursor: pointer;
+  color: #000; /* Logo oscuro */
 }
 
 nav h1:hover {
@@ -40,8 +43,9 @@ nav ul {
 }
 
 nav a {
-  color: white;
+  color: #333; /* Enlaces del menú en oscuro */
   text-decoration: none;
+  font-weight: bold;
   transition: 0.3s;
 }
 
@@ -57,6 +61,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: white; /* El texto encima de la foto sigue siendo blanco para que se lea */
 }
 
 .hero-text h2 {
@@ -75,6 +80,7 @@ button {
   color: white;
   cursor: pointer;
   border-radius: 8px;
+  font-weight: bold;
   transition: 0.3s;
 }
 
@@ -96,15 +102,17 @@ button:hover {
 }
 
 .card {
-  background: #1b1b1b;
+  background: #ffffff; /* Tarjetas blancas */
   border-radius: 12px;
   overflow: hidden;
   width: 300px;
-  transition: transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08); /* Sombra suave */
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
   transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* La sombra crece al pasar el ratón */
 }
 
 .card img {
@@ -115,10 +123,12 @@ button:hover {
 
 .card h3 {
   margin: 15px 0 10px;
+  color: #000;
 }
 
 .card p {
   padding: 0 15px 20px;
+  color: #555;
 }
 
 .contacto {
@@ -136,13 +146,22 @@ form {
 
 input, textarea {
   padding: 12px;
-  border: none;
+  border: 1px solid #ccc; /* Borde gris para que se noten los inputs */
   border-radius: 8px;
+  background: #fff;
+  color: #333;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #ff3c00; /* Borde naranja al escribir */
 }
 
 footer {
   text-align: center;
   padding: 20px;
-  background: #000;
+  background: #ffffff;
+  color: #555;
+  border-top: 1px solid #eaeaea; /* Línea separadora sutil arriba del footer */
   margin-top: 30px;
 }
