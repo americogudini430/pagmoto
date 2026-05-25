@@ -23,6 +23,16 @@ nav {
   align-items: center;
 }
 
+/* Efecto nuevo para el logo */
+nav h1 {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+nav h1:hover {
+  color: #ff3c00;
+}
+
 nav ul {
   display: flex;
   list-style: none;
